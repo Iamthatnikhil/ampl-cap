@@ -1,0 +1,530 @@
+
+<main class="page-content small-content">
+
+  <div
+    class="dn-breadcaump-area breadcrumb-default bg_image about-us pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb-content text-center">
+            <h1 class="breadcrumb-content__title text-white fontWeight400">Articles</h1>
+            <ul class="breadcrumb-content__nav text-white">
+              <li><a routerLink="/home">Home</a></li>
+              <li class="separator">/</li>
+              <li class="active">Media</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="blog-grid-layout-area pt--40 pb--120 pt_lg--20 pb_lg--100 pt_md--0 pb_md--80 pt_sm--0 pb_sm--80   bg-color" data-bg-color="#f9f9f9">
+    <div class="row plr--80 plr_sm--15 plr_md--30 plr_lg--30 row-reverse">
+  
+
+      <div class="col-xl-3 col-lg-4 col-md-6"  *ngFor="let items of articles">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a [href]="items.url" target="_blank">
+
+              <img class="w-100"  src="{{(items.image=='' || items.image==null) ? 'assets/img/banner_dummy.jpg' :  mediaUrl+items.image}}" >
+
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">{{items.category}}</p>
+              <a class="bodyColor postedDate">Posted on {{items.pdate | date:'dd MMM yyyy'}}</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a [href]="items.url" target="_blank"> {{items.title}} </a></h3>
+
+            <div [innerHTML]="items.description">  </div> 
+            <ul class="meta">
+              <li>By {{items.author}} </li>
+              <li>Website : <a [href]="items.url" target="_blank" class="text-pri"><em>{{items.source}}</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.business-standard.com/article/companies/foodtech-firm-saveeat-raises-500-000-in-funding-to-expand-business-122121301105_1.html" target="_blank">
+              <img class="w-100" src="assets/img/media/foodtech01.webp" alt="Foodtech firm SaveEat raises $500,000">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.business-standard.com/article/companies/foodtech-firm-saveeat-raises-500-000-in-funding-to-expand-business-122121301105_1.html" target="_blank"> Foodtech firm SaveEat raises $500,000 in funding to expand business</a></h3>
+            <p>SaveEat has raised $500,000 in pre-series A funding from Credent Investment Pvt Ltd, bringing the foodtech start-up’s valuation to $4 million.</p>
+            <ul class="meta">
+              <li>By Aryaman Gupta </li>
+              <li>Website : <a href="https://www.business-standard.com/article/companies/foodtech-firm-saveeat-raises-500-000-in-funding-to-expand-business-122121301105_1.html" target="_blank" class="text-pri"><em>Business Standard</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://bwdisrupt.businessworld.in/article/FoodTech-Startup-SaveEat-Secures-500K-In-Pre-seed-Round/13-12-2022-457833/" target="_blank">
+              <img class="w-100" src="assets/img/media/pre-seed-round.webp" alt="FoodTech Startup SaveEat">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://bwdisrupt.businessworld.in/article/FoodTech-Startup-SaveEat-Secures-500K-In-Pre-seed-Round/13-12-2022-457833/" target="_blank"> FoodTech Startup SaveEat Secures $500K In Pre-seed Round</a></h3>
+            <p>The valuation of SaveEat post this round stands at USD 4 million SaveEat, a homegrown food-saving app on Tuesday raises a pre-seed round of USD 500K from Credent Investment.</p>
+            <ul class="meta">
+              <li>BW Online Bureau</li>
+              <li>Website : <a href="https://bwdisrupt.businessworld.in/article/FoodTech-Startup-SaveEat-Secures-500K-In-Pre-seed-Round/13-12-2022-457833/" target="_blank" class="text-pri"><em>Business World</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.entrepreneur.com/en-in/news-and-trends/saveeat-raises-500000-from-credent-investment-at-4/441008" target="_blank">
+              <img class="w-100" src="assets/img/media/valuation.webp" alt="SaveEat Raises">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.entrepreneur.com/en-in/news-and-trends/saveeat-raises-500000-from-credent-investment-at-4/441008" target="_blank"> SaveEat Raises $500,000 From Credent Investment At $4 Million Valuation</a></h3>
+            <p> The fund raised will be utilized towards strengthening the technology, increasing the team size and also marketing.</p>
+            <ul class="meta">
+              <li>By Teena Jose</li>
+              <li>Website : <a href="https://www.entrepreneur.com/en-in/news-and-trends/saveeat-raises-500000-from-credent-investment-at-4/441008" target="_blank" class="text-pri"><em>Entrepreneur</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.vccircle.com/foodtechfirm-saveeat-pockets-fresh-funding" target="_blank">
+              <img class="w-100" src="assets/img/media/fundingl.webp" alt="Foodtech Firm SaveEat Pockets Fresh Funding">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.vccircle.com/foodtechfirm-saveeat-pockets-fresh-funding" target="_blank"> Foodtech Firm SaveEat Pockets Fresh Funding</a></h3>
+            <p> Mumbai-based food-saving app SaveEat on Tuesday said it has raised $500,000 from Credent Investment in a pre-seed funding exercise.
+</p>
+            <ul class="meta">
+              <li>By Shubhobrota Dev Roy</li>
+              <li>Website : <a href="https://www.vccircle.com/foodtechfirm-saveeat-pockets-fresh-funding" target="_blank" class="text-pri"><em>VC Circle</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.estrade.in/foodtech-saveeat-raises-500000-us-from-credent-investment/" target="_blank">
+              <img class="w-100" src="assets/img/media/credent-investment.webp" alt="oodtech ‘SaveEat’ raises $500,000 US$">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.estrade.in/foodtech-saveeat-raises-500000-us-from-credent-investment/" target="_blank">  Foodtech ‘SaveEat’ raises $500,000 US$ from Credent Investment</a></h3>
+            <p> Foodtech platform ‘SaveEat’ raises$500,000 USD from Credent Investment at $4 MN USD valuation.            </p>
+            <ul class="meta">
+              <li>By Team Estrade</li>
+              <li>Website : <a href="https://www.estrade.in/foodtech-saveeat-raises-500000-us-from-credent-investment/" target="_blank" class="text-pri"><em>ES Trade</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://apacnewsnetwork.com/2022/12/foodtech-platform-saveeat-raises-500000-from-credent-investment/" target="_blank">
+              <img class="w-100" src="assets/img/media/fresh-funding.webp" alt="Foodtech platform ‘SaveEat’ raises">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Funding, Startups</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://apacnewsnetwork.com/2022/12/foodtech-platform-saveeat-raises-500000-from-credent-investment/" target="_blank">   Foodtech platform ‘SaveEat’ raises $500,000 from Credent Investment</a></h3>
+            <p>SaveEat, India’s first food saving app, has raised a pre-seed round of $500,000USD from Credent Investment Private Limited..</p>
+            <ul class="meta">
+              <li>Website : <a href="https://apacnewsnetwork.com/2022/12/foodtech-platform-saveeat-raises-500000-from-credent-investment/" target="_blank" class="text-pri"><em>APAC News Network</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://beamstart.com/news/foodtech-firm-saveeat-raises-500000-16709454942676" target="_blank">
+              <img class="w-100" src="assets/img/media/funding-round.webp" alt="Foodtech firm SaveEat">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://beamstart.com/news/foodtech-firm-saveeat-raises-500000-16709454942676" target="_blank">Foodtech firm SaveEat raises $500,000 in funding to expand business</a></h3>
+            <p> SaveEat has raised $500,000 in pre-series A funding from Credent Investment Pvt Ltd, bringing the foodtech start-up’s valuation to $4 million.
+
+            </p>
+            <ul class="meta">
+              <li>By Aryaman Gupta</li>
+              <li>Website : <a href="https://beamstart.com/news/foodtech-firm-saveeat-raises-500000-16709454942676" target="_blank" class="text-pri"><em>Bamstart</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://thebritishmail.com/foodtech-firm-saveeat-raises-500000-in-funding-to-expand-business/" target="_blank">
+              <img class="w-100" src="assets/img/media/business-exapand.webp" alt="Foodtech firm SaveEat raises $500,000">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://thebritishmail.com/foodtech-firm-saveeat-raises-500000-in-funding-to-expand-business/" target="_blank">
+              Foodtech firm SaveEat raises $500,000 in funding to expand business</a></h3>
+            <p> SaveEat has raised $500,000 in pre-series A funding from Credent Investment Pvt Ltd, bringing the foodtech start-up’s valuation to $4 million.
+
+            </p>
+            <ul class="meta">
+              <li>Website : <a href="https://thebritishmail.com/foodtech-firm-saveeat-raises-500000-in-funding-to-expand-business/" target="_blank" class="text-pri"><em>The British Mail</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.vccircle.com/credentasset-seeks-to-raise-over-500-crore-via-three-new-aifs" target="_blank">
+              <img class="w-100" src="assets/img/media/seekrf.webp" alt="Credent Asset seeks to raise over ₹500">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 29 Nov, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.vccircle.com/credentasset-seeks-to-raise-over-500-crore-via-three-new-aifs" target="_blank">
+              Credent Asset seeks to raise over ₹500 crore via three new AIFs</a></h3>
+            <p>Mumbai-based Credent Asset Management Services Pvt. Ltd, an associate of publicly-listed Oracle .
+
+            </p>
+            <ul class="meta">
+              <li>By Beena Parmar</li>
+              <li>Website : <a href="https://www.vccircle.com/credentasset-seeks-to-raise-over-500-crore-via-three-new-aifs" target="_blank" class="text-pri"><em>vccircle</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://theprint.in/ani-press-releases/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/1253263/" target="_blank">
+              <img class="w-100" src="assets/img/media/ANI-20221207115533.webp" alt="Credent Asset Management acquires">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://theprint.in/ani-press-releases/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/1253263/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Mumbai (Maharashtra) [India], December 7 (ANI/Vicara PR): Credent Asset Management Services Pvt Ltd.</p>
+            <ul class="meta">
+              <li>By ANI</li>
+              <li>Website : <a href="https://theprint.in/ani-press-releases/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/1253263/" target="_blank" class="text-pri"><em>The Print</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="http://www.journeyline.in/newsdet.aspx?q=248507" target="_blank">
+              <img class="w-100" src="assets/img/media/woman-hand.webp" alt="Credent Asset Management acquires 49 per cent">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="http://www.journeyline.in/newsdet.aspx?q=248507" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p> Mumbai, dec 7: Credent Asset Management Services Pvt Ltd, an associate of Oracle Credit Limited, today announced that it has completed the acquisition of 49 per cent stake..</p>
+            <ul class="meta">
+              
+              <li>Website : <a href="http://www.journeyline.in/newsdet.aspx?q=248507" target="_blank" class="text-pri"><em>Journey Line</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.newkerala.com/news/2022/154978.htm" target="_blank">
+              <img class="w-100" src="assets/img/media/workplace-results.webp" alt="Credent Asset Management acquires">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">News</p>
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.newkerala.com/news/2022/154978.htm" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>The acquisition is part of 100 per cent takeover plan post SEBI approval for change in control.</p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://www.newkerala.com/news/2022/154978.htm" target="_blank" class="text-pri"><em>newkerala.com</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.lokmattimes.com/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/" target="_blank">
+              <img class="w-100" src="assets/img/media/vardan-papikyan.webp" alt="Credent Asset Management">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Finance</p>
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.lokmattimes.com/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Credent Asset Management Services Pvt Ltd, an associate of Oracle Credit Limited, today announced that it has completed the acquisition of 49 per cent stake of ..</p>
+            <ul class="meta">
+              <li>By ANI</li>
+              <li>Website : <a href="https://www.lokmattimes.com/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance/" target="_blank" class="text-pri"><em>Lokmattime</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.alpha-maven.com/news/alternative-investment/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-devdiscourse" target="_blank">
+              <img class="w-100" src="assets/img/media/front-view-arrangement.webp" alt="Credent Asset Management acquires 49">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.alpha-maven.com/news/alternative-investment/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-devdiscourse" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Credent Asset Management acquires 49 per cent stake in Essel Finance  Devdiscourse.. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://www.alpha-maven.com/news/alternative-investment/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-devdiscourse" target="_blank" class="text-pri"><em>Alpha Maven</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://thetimesbureau.com/a-49-share-in-essel-finance-is-acquired-by-credent-asset-management-202212/" target="_blank">
+              <img class="w-100" src="assets/img/media/budget.webp" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 7 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://thetimesbureau.com/a-49-share-in-essel-finance-is-acquired-by-credent-asset-management-202212/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Credent Asset Management Services Pvt Ltd, an associate of Oracle Credit Limited, announced today that it had completed the acquisition of a 49% interest in Essel Finance Advisors </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://thetimesbureau.com/a-49-share-in-essel-finance-is-acquired-by-credent-asset-management-202212/" target="_blank" class="text-pri"><em>The Times Bureau</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.privatebankerinternational.com/news/credent-asset-management-essel/" target="_blank">
+              <img class="w-100" src="assets/img/media/asset.webp" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">News</p>
+              <a class="bodyColor postedDate">Posted on 8 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.privatebankerinternational.com/news/credent-asset-management-essel/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>India-based Credent Asset Management Services has concluded the purchase of a 49% stake in Essel Finance Advisors and Managers (EFAM) for an undisclosed sum. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://www.privatebankerinternational.com/news/credent-asset-management-essel/" target="_blank" class="text-pri"><em>Private Banker International</em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://beatlyzer.com/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-211589.html" target="_blank">
+              <img class="w-100" src="assets/img/media/businessmen-elegant.webp" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 13 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://beatlyzer.com/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-211589.html" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Mumbai (Maharashtra) [India], December 7 (ANI/Vicara PR): Credent Asset Management Services Pvt Ltd, an subordinate of Oracle Credit Limited, contiguous announced that it has completed. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://beatlyzer.com/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-211589.html" target="_blank" class="text-pri"><em> Beatlyzer </em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.londonchannelnews.com/news/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172603/" target="_blank">
+              <img class="w-100" src="assets/img/media/loan-buy-house.webp" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Business</p>
+              <a class="bodyColor postedDate">Posted on 20 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.londonchannelnews.com/news/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172603/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Mumbai (Maharashtra) [India], December 7 (ANI/Vicara PR): Credent Asset Management Services Pvt Ltd, an subordinate of Oracle Credit Limited, contiguous announced that it has completed. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://www.londonchannelnews.com/news/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172603/" target="_blank" class="text-pri"><em> London Channel News </em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.aninews.in/news/business/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172608/" target="_blank">
+              <img class="w-100" src="assets/img/media/trade.webp" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">General</p>
+              <a class="bodyColor postedDate">Posted on 20 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.aninews.in/news/business/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172608/" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Mumbai (Maharashtra) [India], December 7 (ANI/Vicara PR): Credent Asset Management Services Pvt Ltd, an subordinate of Oracle Credit Limited, contiguous announced that it has completed. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="
+                https://www.aninews.in/news/business/business/credent-asset-management-acquires-49-per-cent-stake-in-essel-finance20221207172608/" target="_blank" class="text-pri"><em> ANI News </em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40">
+          <div class="thumbnail">
+            <a href="https://www.latestly.com/agency-news/business-news-credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-4556465.html" target="_blank">
+              <img class="w-100" src="assets/img/media/invest.jfif" alt="Credent Asset Management acquires 49 per cent stake in Essel Finance">
+            </a>
+          </div>
+          <div class="inner">
+            <div class="category">
+              <p class="underline">Agency News</p>
+              <a class="bodyColor postedDate">Posted on 20 Dec, 2022</a>
+            </div>
+            <h3 class="mb--10 mt--5 font--32"><a href="https://www.latestly.com/agency-news/business-news-credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-4556465.html" target="_blank">
+              Credent Asset Management acquires 49 per cent stake in Essel Finance</a></h3>
+            <p>Mumbai (Maharashtra) [India], December 7 (ANI/Vicara PR): Credent Asset Management Services Pvt Ltd, an subordinate of Oracle Credit Limited, contiguous announced that it has completed. </p>
+            <ul class="meta">
+              
+              <li>Website : <a href="https://www.latestly.com/agency-news/business-news-credent-asset-management-acquires-49-per-cent-stake-in-essel-finance-4556465.html" target="_blank" class="text-pri"><em> Latest LY </em></a></li>
+            </ul>
+          </div>
+        </div>
+      </div> 
+
+    </div>
+
+  </div>
+
+</main>

@@ -1,0 +1,22 @@
+.announcement-bar {
+  background: #c8a96a; /* gold */
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  z-index: 9999;
+  text-align-last: center;
+}
+.announcement-bar span{
+    font-size: 18px;
+    margin: 7px ;
+}
+@media screen and (max-width:560px){
+.announcement-bar span{
+    font-size: 12px !important;
+}
+}
+

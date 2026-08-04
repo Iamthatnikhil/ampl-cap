@@ -1,0 +1,10 @@
+/* .row-reverse{
+    flex-direction: column-reverse;
+}
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .row-reverse{
+        flex-direction: column-reverse;
+    }
+} */

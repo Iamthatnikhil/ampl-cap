@@ -1,0 +1,31 @@
+.thumbnail{
+    position: relative;
+}
+.thumbnail span{
+    position: absolute;
+    width: 50px;
+    background: #ff0000;
+    border-radius: 50%;
+    right:10px;
+    top: 10px;
+    width: 32px;
+    height: 32px;
+padding: 5px;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: 3px solid #fd7272;
+  
+}
+.videoTitle{
+    font-size: 16px !important;
+}
+.mediaVideosLoop:nth-child(4), .mediaVideosLoop:nth-child(9){
+    display: none !important;
+}
+
+.bg-light{
+    height: 140px;
+}

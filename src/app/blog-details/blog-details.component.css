@@ -1,0 +1,23 @@
+a{
+    cursor: pointer;
+}
+.likes button{
+    border-radius:30px;
+    margin:0px 10px 10px 0px;    
+    padding:8px 15px;
+    background: #f1f1f1;
+
+}
+.likes-counter,.dislikes-counter{
+    font-weight: 600;
+}
+.btn.btn-default:active,.btn.btn-default:focus,.btn.btn-default{
+    box-shadow: none;
+    outline: none;
+    border:none;
+}
+.btn.btn-default.active{
+    /* background: #28639d !important; */
+    color:#1bb555 !important;
+    font-weight: 600;
+}

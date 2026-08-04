@@ -1,0 +1,16 @@
+/* .column{
+    display:flex;
+     flex-wrap:wrap;
+    flex-direction: column;
+  }
+   
+  .broucher-card{
+    display: flex;
+  } 
+  .row.broucherList {
+    display:flex;
+    flex-direction: row-reverse;
+    flex-wrap:nowrap;
+  }
+   */
+  

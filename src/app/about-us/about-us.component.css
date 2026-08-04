@@ -1,0 +1,10 @@
+.aboutImg {
+  height: 100%;
+}
+
+.aboutImg img {
+  border-radius: 25px 100px;
+  border: 5px solid #eee;
+  height: 100%;
+  object-fit: cover;
+}

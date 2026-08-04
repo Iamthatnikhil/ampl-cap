@@ -1,0 +1,359 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Shareholding Patterns</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Shareholding Patterns</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+            <div id="faqsThree" class="faqsOne pdf-files mt--50">
+
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <a href="/assets/img/shareholding-pattern/Shareholding Pattern for the Quarter Ended_30.06.2026.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern for Quarter Ended 30-06-2026
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card" *ngFor="let doc of docs">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              
+              <div class="card" *ngFor="let items of filterCategoty">
+                <div class="card-header" id="heading11">
+                  <h5 class="mb-0">
+                    <a [href]="imageUrls + items.pdf_file" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> {{items.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <a href="/assets/img/shareholding-pattern/Shareholding Pattern XBRL File as on 30.09.2025.html" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern for 30-09-2025
+                    </a>
+                  </h5>
+                </div>
+              </div>
+               <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <a href="/assets/img/shareholding-pattern/Shareholding pattern XBRL as on 30.06.2025_CGFL.html" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on 30-06-2025
+                    </a>
+                  </h5>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding_Patter_for_the_quarter_ended_30.06.2023.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern for quarter ended June 30, 2023
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding Pattern_31.03.2023.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2023
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/shareholding pattern_30.09.2021.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on September 30, 2021
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading4">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHARE HOLDER PATTERN_30.06.2021.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on June 30, 2021
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading5">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP MARCH 2021.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2021
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading6">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP SEP 2020 PDF.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on September 30, 2020
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading7">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_31.03.20.html.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2020
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading8">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_OCL_30.09.2019.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (OCL) as on September 30, 2019
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading9">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_31-03-2019.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2019
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading10">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_31.12.2018.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on December 31, 2018
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading11">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_30.06.2018_(OCL).pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (OCL) as on June 30, 2018
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading12">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_OCL (31122017).pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (OCL) as on December 31, 2017
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading13">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_OCL (31122017) (1).pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (OCL) as on December 31, 2017 (copy)
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading14">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding Pattern 30062017.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on June 30, 2017
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading15">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Reg 31_SHP 31.03.2017.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2017
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading16">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_30.09.2016_ocl.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (OCL) as on September 30, 2016
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading17">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP REPORT_30.06.16.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on June 30, 2016
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading18">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHP_REPORT_31.03.2016.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on March 31, 2016
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading19">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding pattern  31.12.2016.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on December 31, 2016
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading20">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/SHARE HOLDING PATTERN_31.12.2015.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern as on December 31, 2015
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- Files without specific dates in name -->
+
+              <div class="card">
+                <div class="card-header" id="heading21">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding_Pattern_XBRL_H76yxVA.html" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (XBRL H76yxVA)
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading22">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-pattern/Shareholding_Pattern_XBRL.html" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> Shareholding Pattern (XBRL)
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--
+    <div class="about-area construction-about bg-20" data-bg-color="#ffffff">
+      <div class="container">
+        <nav class='animated fadeInLeft navbar-tab'>
+          <ul>
+
+            <li class='sub-menu'><a href='#investors'>Investors zone<div class='fa fa-caret-down right'></div></a>
+              <ul>
+                <li><a href='#settings'>Financial Results</a></li>
+                <li><a href='#settings'>Shareholding Patterns</a></li>
+                <li><a href='#settings'>Investors & Contact</a></li>
+                <li><a href='#settings'>Listing Details</a></li>
+
+              </ul>
+            </li>
+
+            <li class='sub-menu'><a href='#reports'>Reports & Disclosures <div class='fa fa-caret-down right'></div></a>
+              <ul>
+                <li><a href='#'>Annual Reports</a></li>
+                <li><a href='#'>Corporate Governance Reports</a></li>
+                <li><a href='#'>Code of Conduct</a></li>
+                <li><a href='#'>Code for Independent Directors</a></li>
+                <li><a href="">Fair Practices Code</a></li>
+                <li><a href="">Vigil/ Grievance mechanism</a></li>
+                <li><a href="">Policies</a></li>
+                <li><a href="">Material Events and Information</a></li>
+                <li><a href="">Newspaper Publication</a></li>
+                <li><a href="">Other Informations</a></li>
+                <li><a href="">Certificates</a></li>
+
+
+
+              </ul>
+            </li>
+            <li><a href='#message'>Notices</a></li>
+            <li><a href='#message'>Careers</a></li>
+            <li><a href='#message'>Contact Us</a></li>
+          </ul>
+        </nav>
+
+
+      </div>
+    </div> -->
+
+
+
+
+
+
+  </main>

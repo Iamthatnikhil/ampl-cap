@@ -1,0 +1,485 @@
+.section_title--2 .title {
+  font-size: 36px
+}
+
+section.our-mission {
+  background-color: #001bb7
+}
+
+section.our-mission.ptb--150 {
+  padding: 150px 0 !important
+}
+
+.services-two {
+  position: relative;
+  top: -100px;
+  z-index: 9999;
+  display: block;
+  padding: 20px 0 100px
+}
+
+.services-two__single {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 30px #00000026;
+  margin-bottom: 30px;
+  padding: 50px 5px 15px;
+  text-align: center;
+  border-radius: 15%;
+  height: 95%
+}
+
+.services-two__title {
+  font-size: 19px;
+  font-weight: 800;
+  line-height: 34px;
+  text-transform: uppercase;
+  letter-spacing: -.02em
+}
+
+.services-two__text {
+  font-size: 16px;
+  margin: 0
+}
+
+.services-two__icon span {
+  position: relative;
+  display: inline-block;
+  font-size: 65px;
+  color: #028d82;
+  transform: scale(1);
+  transition: all .2s linear
+}
+
+.custom-container-fluid {
+  padding-left: 80px;
+  padding-right: 80px
+}
+
+.services-two__single>h4 {
+  font-size: 20px;
+  color: #7e7e7e;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-weight: 300
+}
+
+.cta-one {
+  position: relative;
+  display: block;
+  background-color: #028d82;
+  padding: 110px 0
+}
+
+.cta-one-bg {
+  position: absolute;
+  inset: 0;
+  background-position: center center;
+  background-size: cover;
+  background-color: #028d82;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay
+}
+
+.cta-one__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+.cta-one__title {
+  font-size: 46px;
+  color: #fff;
+  line-height: 60px;
+  font-weight: 900
+}
+
+.cta-one__btn {
+  background-color: #fff !important;
+  color: #000 !important
+}
+
+.investingWins .card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 60px #00000012
+}
+
+.investingWins .card-header.bg-light-danger,
+.investingWins .card-footer {
+  background: #fdf9f9
+}
+
+.bg-light-secondary {
+  background: #efe3e4 !important
+}
+
+.investingWins .card-body ul li {
+  list-style: none;
+  padding: 20px;
+  border-bottom: 1px dashed #efd8d8;
+  display: flex;
+  justify-content: center
+}
+
+.investingWins .card-body ul li:last-child {
+  border-bottom: none
+}
+
+.investingWins .card-body h3 {
+  background: #f00;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0
+}
+
+.kddl {
+  margin-top: 40px
+}
+
+.investingWins .card-footer {
+  padding: 25px 20px
+}
+
+.investingWins .card-footer h6 {
+  color: #333;
+  margin-bottom: 0
+}
+
+.idfc .card-body h3 {
+  background: #9d1d27 !important
+}
+
+.member-angle-links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 216px
+}
+
+.member-angle-links .shape {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  width: 100%;
+  /* display: none; */
+}
+
+.member-angle-links .shape img {
+  width: 100%
+}
+
+.member-angle-links .middle-icon i,
+.member-angle-links a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--white-color);
+  color: var(--title-color);
+  display: inline-block;
+  border-radius: 50%
+}
+
+.member-angle-links .middle-icon i:hover,
+.member-angle-links a:hover {
+  background-color: #1296db;
+  color: #fff
+}
+
+/* .member-angle-links .middle-icon i:nth-of-type(1):not(.middle-icon):not(i),
+.member-angle-links a:nth-of-type(1):not(.middle-icon):not(i) {
+  left: 215px;
+  top: 21px
+}
+
+.member-angle-links .middle-icon i:nth-of-type(2),
+.member-angle-links a:nth-of-type(2) {
+  left: 169px;
+  top: 57px
+}
+
+.member-angle-links .middle-icon i:nth-of-type(3),
+.member-angle-links a:nth-of-type(3) {
+  left: 333px;
+  top: 10px
+}
+
+.member-angle-links .middle-icon i:nth-of-type(4),
+.member-angle-links a:nth-of-type(4) {
+  left: 387px;
+  top: 31px
+} */
+
+/* .member-angle-links a {
+  position: absolute;
+  left: 0;
+  top: 0
+} */
+.member-details-img {
+  position: relative;
+}
+
+.member-angle-links .middle-icon {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  z-index: 1;
+  box-shadow: 0 25px 50px -12px #00000040
+}
+
+.member-angle-links .middle-icon i {
+  background-color: #1296db;
+  color: #fff
+}
+
+.member-angle-links .middle-icon:before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  background-color: #fff;
+  border-radius: inherit;
+  z-index: -1
+}
+
+.position-relative {
+  position: relative !important
+}
+
+.overflow-hidden {
+  overflow: hidden !important
+}
+
+.rounded-3 {
+  border-radius: 2rem
+}
+
+.companies .card {
+  border-radius: 15px
+}
+
+.companies .card .card-body {
+  padding: 10px
+}
+
+.companies .card .card-body img {
+  border-radius: 15px
+}
+
+.aimCol {
+  padding: 10px;
+  background: #fff;
+  text-align: center;
+  font-weight: 500
+}
+
+.canvasjs-chart-container a {
+  display: none
+}
+
+@media screen and (max-width:991px) {
+  .custom-container-fluid {
+    padding-left: 5%;
+    padding-right: 5%
+  }
+}
+
+
+
+
+.pastCompany .slide {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pastCompany .slide>.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin: 10px;
+
+}
+
+.pastCompany .slide>.card img {
+  height: 50px;
+}
+
+.teamCards .member-angle-links {
+  height: 175px;
+}
+
+.teamCards .member-angle-links .middle-icon {
+  left: 60px;
+  top: -10px;
+  right: 0px;
+  margin: auto;
+}
+
+
+.teamCards .member-angle-links .middle-icon i,
+.teamCards .member-angle-links a {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.teamCards .member-angle-links .middle-icon:before {
+  inset: -3px;
+}
+
+.canva {
+  position: relative;
+}
+
+.canva .strip {
+  position: absolute;
+  background: #fff;
+  bottom: 0px;
+  width: 100%;
+  height: 20px;
+  left: 0px;
+  right: 0px;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  /* width: 300px; */
+  height: 460px;
+  perspective: 1000px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+
+
+}
+
+.flip-card:focus {
+  outline: 0;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-front {
+  background: #fff;
+  color: #000;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-back {
+  background: #028d82;
+  color: #fff;
+  transform: rotateY(180deg);
+  z-index: 1;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  text-align: left;
+  padding: 20px;
+}
+
+.teamCards .member-header {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 5px solid #ececec;
+  padding: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  opacity: 1;
+  z-index: 99;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+.webinarPopup {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+@media screen and (min-width:1600px) and (max-width:1800px) {
+  .services-two__single>h4 {
+    font-size: 16px;
+    letter-spacing: .1em;
+    font-weight: 300
+  }
+
+}
+
+@media screen and (min-width:1200px) and (max-width:1599px) {
+  .services-two__single>h4 {
+    font-size: 15px;
+    letter-spacing: .1em;
+    font-weight: 300
+  }
+
+  .services-two__title {
+    font-size: 16px;
+  }
+
+  .services-two__icon span {
+    font-size: 46px;
+  }
+}
+
+@media screen and (min-width:991px) and (max-width:1199px) {
+  .services-two__single>h4 {
+    font-size: 14px;
+    letter-spacing: .1em;
+    font-weight: 300
+  }
+
+  .services-two__title {
+    font-size: 16px;
+  }
+}

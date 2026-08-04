@@ -1,0 +1,48 @@
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '18.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    cp src/environments/environment.prod.ts src/environments/environment.ts
+        echo "node version line-21"
+    node --version
+    npm list -global --depth 0
+    echo "Copied the env file line-24"
+    echo "npm install legCY PEER ENDAS line-30"
+    echo "npm install bootsrap line-27"
+    echo "npm instal starts angular 14 line-32"
+    npm install --force
+    echo "npm install line-34"
+    ls -ltr node_modules/sweetalert/typings/sweetalert.d.ts
+    cat node_modules/sweetalert/typings/sweetalert.d.ts
+    echo "---------------------"
+    sed "4s/const swal: SweetAlert;/ /1" ./node_modules/sweetalert/typings/sweetalert.d.ts > ./tmp;
+    cat ./tmp
+    echo "---------------------"
+    ls -ltr ./tmp
+    mv ./tmp ./node_modules/sweetalert/typings/sweetalert.d.ts
+    cat node_modules/sweetalert/typings/sweetalert.d.ts
+    npm run build --prod
+  displayName: 'npm install and build'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to dist folder'
+  inputs:
+    SourceFolder: './dist'
+    Contents: '**'
+    TargetFolder: '$(build.artifactstagingdirectory)/dist'
+    cleanTargetFolder: true
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: '$(artifactName)'  

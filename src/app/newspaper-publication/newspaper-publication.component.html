@@ -1,0 +1,300 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Newspaper Publication</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Newspaper Publication</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          
+          <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+              <div id="faqsThree" class="faqsOne pdf-files mt--50"> 
+
+
+
+            <div class="card" *ngFor="let doc of docs">
+              <div class="card-header" id="heading1">
+                <h5 class="mb-0">
+                  <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">
+                    <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                  </a>
+                </h5>
+              </div>
+            </div>
+                <div class="card"  *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper-Advt-of-financial-Results-Final" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper advertisement for Unaudited Standalone and Consolidated Financial Results for the Quarter and
+Half Year ended 30.09.2025. 
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper-Publication-of-notice-of-Postal-ballot.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publication of notice of Postal ballot 07.04.2023 
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper advt of notice of Postal Ballot_final.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper advt of notice of Postal Ballot final 01.03.2023 
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Coorigendum to Notice of Postal Ballot dated 21.04.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Coorigendum to Notice of Postal Ballot dated 21.04.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publication of Notice of 32nd AGM_21-22.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publication of Notice of 32nd AGM_21-22
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publication of notice of Postal Ballot _12.02.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publication of notice of Postal Ballot 12.02.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Advertisement of notice of postal Ballot.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Advertisement of notice of postal Ballot 06.04.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper publication for unaudited finacial results for the quarter ended 30.06.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publication for unaudited finacial results for the quarter ended 30.06.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper publication of Financial Results for the quarter and year ended 31.03.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publication of Financial Results for the quarter and year ended 31.03.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper_publication_of_unaudited_standalone_and_consolidated_Financial_Results_for_the_quarter_ended_31_12_2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publication of unaudited standalone and consolidated Financial Results for the quarter ended 31.12.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper_Publication_of_Standalone_and_Consolidated_Financial_Results_for_quarter_ended_30.09.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publication of Standalone and Consolidated Financial Results for quarter ended 30.09.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publication of Notice of 31st AGM_2020-21.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publication of Notice of 31st AGM_2020-21
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper publish of finanacial results for the quarter ended_30.06.2021.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publish of finanacial results for the quarter ended 30.06.2021
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+               
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/newspaper publish of financial results for the quarter ended 30.09.2021.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publish of financial results for the quarter ended 30.09.2021
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper publish of financial results for the quarter ended_ 31.03.2021.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publish of financial results for the quarter ended 31.03.2021
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/newspaper publish for the quarter ended 30.09.2021.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publish for the quarter ended 30.09.2021
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper advt for unaudited standalone financial results for the period ended 31.12.2021.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper advt for unaudited standalone financial results for the period ended 31.12.2021
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publish of financial results for the quarter ended _ 30.09.2020.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publish of financial results for the quarter ended 30.09.2020
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publish of financial results for the quarter ended_31.03.2020.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publish of financial results for the quarter ended 31.03.2020
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper Publish of financial results for the quarter ended_31.12.2020.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper Publish of financial results for the quarter ended 31.12.2020
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                
+                
+
+
+               
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/newspaper publication of notice of 30 AGM THROUGH VC.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publication of notice of 30 AGM THROUGH VC
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/newspaper publication of notice of 28th AGM.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper  publication of notice of 28th AGM
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/newspaper-publication/Newspaper publication of notice of 29th AGM.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Newspaper publication of notice of 29th AGM
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+
+
+                
+
+                
+
+                
+               
+              </div>
+            </div>
+         
+
+        </div>
+      </div>
+    </div>
+
+
+  </main>

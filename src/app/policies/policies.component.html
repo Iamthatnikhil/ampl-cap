@@ -1,0 +1,623 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Policies</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Policies</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="policy-wrapper">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-4 sidebar-container mb-4 mb-md-0">
+          <div class="nav flex-column nav-pills" id="policy-tabs" role="tablist">
+            <a *ngFor="let tab of tabs" 
+               [class.active]="activeTab === tab.id" 
+               (click)="switchTab(tab.id)"
+               class="nav-link">
+              {{ tab.label }}
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8 content-container">
+          <div class="policy-card">
+            
+            <div *ngIf="activeTab === 'disclosures-pms'" class="policy-content fade-in">
+                <h1 class="mb-4">Disclosure - PMS</h1>
+                <p>The Disclosure Document for AMPL Asset Management Pvt. Ltd.
+                  (Formerly Known as Credent Asset Management Services Private Limited) can be downloaded from here</p>
+                
+                <div class="mt-4">
+                    <a href="/assets/documents/Credent Disclosure Document.pdf" target="_blank" class="btn btn-dark">
+                        Disclosure Document PMS
+                    </a>
+                </div>
+            </div>
+
+            <div *ngIf="activeTab === 'charter-pms'" class="policy-content fade-in">
+                <h1 class="mb-4">Investor Charter - PMS</h1>
+                
+                <div class="mt-4">
+                    <a href="/assets/documents/charter-pms.pdf" target="_blank" class="btn btn-dark">
+                        Charter PMS
+                    </a>
+                </div>
+            </div>
+            <div *ngIf="activeTab === 'documents-pms'" class="policy-content fade-in">
+                  <h1 class="mb-4">CGFL NBFC Policies</h1>
+                
+                  <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+                        <div id="faqsThree" class="faqsOne pdf-files">  
+                            <div class="card">
+                              <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Archival Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Archival Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Code of Conduct for Board Members and Senior Managment Personnel.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Code of Conduct for Board Members and Senior Managment Personnel
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading3">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Criteria for making payments to Non-Executive Directors.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Criteria for making payments to Non-Executive Directors
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading4">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Familiarisation Programme for Independent Directors.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Familiarisation Programme for Independent Directors
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading5">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Insider Trading Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Insider Trading Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading6">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Materiality of Related Party Transaction Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Materiality of Related Party Transaction Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading7">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Materiality of Transaction Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Materiality of Transaction Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading8">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Nomination and Remuneration Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Nomination and Remuneration Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading9">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Preservation of Documents Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Preservation of Documents Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading10">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Prevention of Sexual Harrasment Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Prevention of Sexual Harrasment Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/nbfc/Vigil Mechanism Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Vigil Mechanism Policy
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>
+
+
+               
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div *ngIf="activeTab === 'complaints-pms'" class="policy-content fade-in">
+                <h1 class="mb-4">Complaints - PMS</h1>
+                
+                <h3 class="mt-5">Complaint Data for Portfolio Management Services</h3>
+                <p class="mb-3 text-muted">Data for the month ending – <strong>September 30th, 2025</strong></p>
+
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Sr No</th>
+                                <th>Received from</th>
+                                <th>Pending at the end of last month</th>
+                                <th>Received</th>
+                                <th>Resolved*</th>
+                                <th>Total pending</th>
+                                <th>Pending complaints > 3 Months</th>
+                                <th>Average resolution time ^(in days)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Directly from Investors</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>SEBI (SCORES)</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Other Sources (if any)</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="font-weight-bold">
+                                <td></td>
+                                <td>Grand Total</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-muted">^ Average Resolution time is the sum total of time taken to resolve each complaint in days, in the current month divided by total number of complaints resolved in the current month.</p>
+
+                <h3 class="mt-5">Trend of monthly disposal of complaints</h3>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Sr No</th>
+                                <th>Month</th>
+                                <th>Carried forward from previous month</th>
+                                <th>Received</th>
+                                <th>Resolved*</th>
+                                <th>Pending#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>December 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>2</td><td>November 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>3</td><td>October 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>4</td><td>September 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>5</td><td>August 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>6</td><td>July 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>7</td><td>June 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>8</td><td>May 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>9</td><td>April 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>10</td><td>March 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>11</td><td>February 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>12</td><td>January 2025</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>13</td><td>December 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>14</td><td>October 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>15</td><td>September 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>16</td><td>August 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>17</td><td>July 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>18</td><td>June 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>19</td><td>May 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>20</td><td>Apr 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>21</td><td>March 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>22</td><td>February 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>23</td><td>January 2024</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>24</td><td>December 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>25</td><td>November 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>26</td><td>October 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>27</td><td>September 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>28</td><td>August 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>29</td><td>July 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                            <tr><td>30</td><td>June 2023</td><td>NIL</td><td>NIL</td><td>NIL</td><td>NIL</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-muted">*Inclusive of complaints of previous months resolved in the current month.<br>
+                #Inclusive of complaints pending as on the last day of the month.</p>
+
+                <h3 class="mt-5">Trend of annual disposal of complaints</h3>
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Sr No</th>
+                                <th>Year</th>
+                                <th>Carried forward from previous year</th>
+                                <th>Received</th>
+                                <th>Resolved**</th>
+                                <th>Pending##</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2024-2025</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>2023-2024</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                                <td>NIL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small text-muted">** Inclusive of complaints of previous years resolved in the current year.<br>
+                ## Inclusive of complaints pending as on the last day of the year.</p>
+            </div>
+            <div *ngIf="activeTab === 'anti-money-laundering'" class="policy-content fade-in">
+                <h1 class="mb-4">Anti Money Laundering</h1>
+                <div class="mt-4">
+                    <a href="/assets/documents/Anti Money Laundering.pdf" target="_blank" class="btn btn-dark">
+                        Anti Money Laundering
+                    </a>
+                </div>
+            </div>
+            <div *ngIf="activeTab === 'sebi-ai'" class="policy-content fade-in">
+                <h1 class="mb-4">SEBI Accredited Investor Framework</h1>
+                <div class="mt-4">
+                    <a href="/assets/documents/SEBI Accredited investor Framework.pdf" target="_blank" class="btn btn-dark">
+                        SEBI AI Framework
+                    </a>
+                </div>
+            </div>
+            <div *ngIf="activeTab === 'aif-policies'" class="policy-content fade-in">
+                <h1 class="mb-4">AIF Policies</h1>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+                        <div id="faqsThree" class="faqsOne pdf-files">  
+                           <div class="card">
+                              <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Conflict of Interest policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Conflict of Interest Policy
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Insider Trading Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Insider Trading Policy
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading3">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Minutes Format for adoption of Policies.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Minutes Format for Adoption of Policies
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading4">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Policy on Complaint Handling and Dispute Resolution.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Policy on Complaint Handling and Dispute Resolution
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading5">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Policy on Outsourcing.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Policy on Outsourcing
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading6">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Policy on Prevention of Unauthenticated News.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Policy on Prevention of Unauthenticated News
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading7">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Policy on Prevention of Money Laundering Activities.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Policy on Prevention of Money Laundering Activities
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading8">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Policy on Stewardship Responsibilities.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Policy on Stewardship Responsibilities
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading9">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Risk and Liquidity Management Policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Risk and Liquidity Management Policy
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading10">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/Valuation policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Valuation Policy
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            
+
+                            
+
+
+               
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div *ngIf="activeTab === 'ria-policies'" class="policy-content fade-in">
+                <h1 class="mb-4">RIA Policies</h1>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+                        <div id="faqsThree" class="faqsOne pdf-files">  
+                           <div class="card">
+                              <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/ria/Aml policy.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Aml policy
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading2">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/ria/Code of Conduct.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Code of Conduct
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="heading3">
+                                <h5 class="mb-0">
+                                  <a href="assets/img/policies/ria/Investor Charter-IA.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> Investor Charter-IA
+                                  </a>
+                                </h5>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div *ngIf="activeTab === 'pms-policies'" class="policy-content fade-in">
+                <h1 class="mb-4">RIA Policies</h1>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+                        <div id="faqsThree" class="faqsOne pdf-files">  
+                           <div class="card">
+                            <div class="card-header" id="heading1">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/DEALING ROOM AND TEAM POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Dealing Room & Team Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading2">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/INSIDER TRADING POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Insider Trading Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading3">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/INVESTMENT POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Investment Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading4">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/INVESTOR GRIEVANCE REDRESSAL POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Investor Grievance Redressal Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading5">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/KYC AND AML POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> KYC & AML Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading6">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/OUTSOURCING POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Outsourcing Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading7">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/POLICY ON CONFLICT OF INTEREST.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Policy on Conflict of Interest
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading8">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/RISK MANAGEMENT POLICY.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Risk Management Policy
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+
+                          <div class="card">
+                            <div class="card-header" id="heading9">
+                              <h5 class="mb-0">
+                                <a href="assets/img/policies/pms/VALUATION POLICY AND PROCEDURES.pdf" target="_blank">
+                                  <img src="assets/img/icons/pdf.png"> Valuation Policy and Procedures
+                                </a>
+                              </h5>
+                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+    
+
+
+  </main>

@@ -1,0 +1,79 @@
+<main class="page-content small-content">
+
+  <div
+    class="dn-breadcaump-area breadcrumb-default bg_image about-us pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb-content text-center">
+            <h1 class="breadcrumb-content__title text-white fontWeight400">Media Videos</h1>
+            <ul class="breadcrumb-content__nav text-white">
+              <li><a routerLink="/home">Home</a></li>
+              <li class="separator">/</li>
+              <li class="active">Media Videos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div
+    class="blog-grid-layout-area pt--40 pb--120 pt_lg--20 pb_lg--100 pt_md--0 pb_md--80 pt_sm--0 pb_sm--80   bg-color"
+    data-bg-color="#f9f9f9">
+    <div class="row plr--80 plr_sm--15 plr_md--30 plr_lg--30 row-reverse">
+
+
+      <div class="col-xl-4 col-lg-4 col-md-6 mediaVideosLoop mb-4" *ngFor="let items of videos">
+        <!-- <div class="blog blog_style--1 border-none mt--80 mt_md--50 mt_sm--40"> -->
+        <div class="card h-100 w-100">
+          <div class="card-body p-2 h-100">
+            <div class="thumbnail rounded-3">
+              <a [href]="items.url" target="_blank">
+                <!-- <img class="w-100" [src]="imageUrls + items.videos_image"> -->
+                <!-- <img class="w-100" src="https://img.youtube.com/vi/{{getYouTubeVideoIdFromEmbedURL(items.url)}}/maxresdefault.jpg"> -->
+
+              </a>
+
+
+
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" [src]="generateSafeUrl(items.url)"></iframe>
+              </div>
+
+              <div>
+                <span> <a [href]="items.url" target="_blank"><i class="fa fa-play"></i></a></span>
+              </div>
+            </div>
+            <div class="inner bg-light p-3">
+              <div class="category">
+                <p class="underline">{{items.category}}</p>
+                <a class="bodyColor postedDate">Posted on {{items.pdate | date:'dd MMM yyyy'}}</a>
+              </div>
+              <h3 class="mb--5 mt--5 videoTitle"><a [href]="items.url" target="_blank"> {{items.title}} </a></h3>
+              <!-- 
+              
+  
+                  <div [innerHTML]="items.description"> </div>    -->
+
+              <ul class="meta">
+                <!-- <li>By {{items.author}}</li> -->
+                <!-- <li>Website : <a [href]="items.url" target="_blank" class="text-pri"><em>{{items.url}}</em></a></li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+
+</main>

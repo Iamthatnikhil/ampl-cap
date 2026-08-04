@@ -1,0 +1,205 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Annual General Meetings</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Annual General Meetings</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container"> 
+
+         
+        <div class="row align-items-center justify-content-center">
+          
+            <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+              <h3>Notices of AGM</h3>
+              <div id="faqsThree" class="faqsOne pdf-files mt--20"> 
+                     <div class="card" *ngFor="let doc1 of docs1">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs1 + doc1.page+'/' + doc1.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc1.doc)}}" alt="{{doc1.title}}" width="30"> {{doc1.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/general-meeting/CIPL/Notice of AGM of CGFL for FY 24-25" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Notice of AGM of CGFL for FY 24-25
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+              </div>
+            </div>
+            <div class="col-lg-12 col-mb-12 col-12 mt--30 wow move-up">
+              <h3>Notices of EGM</h3>
+              <div id="faqsThree" class="faqsOne pdf-files mt--20"> 
+
+                         <div class="card" *ngFor="let doc2 of docs2">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs2 + doc2.page+'/' + doc2.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc2.doc)}}" alt="{{doc2.title}}" width="30"> {{doc2.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+              
+                <div class="card"  *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/general-meeting/CIPL/Notice of EGM_CGFL-2025.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Notice of EGM of CGFL for 2025
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+              </div>
+            </div>
+            <div class="col-lg-12 col-mb-12 col-12 wow move-up mt--30">
+              <h3>Voting Results</h3>
+              <div id="faqsThree" class="faqsOne pdf-files mt--20"> 
+                  <div class="card" *ngFor="let doc3 of docs3">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs3 + doc3.page+'/' + doc3.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc3.doc)}}" alt="{{doc3.title}}" width="30"> {{doc3.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+                <div class="card"  *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                              <div class="card">
+                                <div class="card-header" id="heading11">
+                                  <h5 class="mb-0">
+                                    <a href="/assets/img/general-meeting/CIPL/Scruitnizer Report with VR_CGFL.pdf" target="_blank">
+                                      <img src="assets/img/icons/pdf.png"> 
+                                      Scruitnizer Report as on 11-11-2025
+                                    </a>
+                                  </h5>
+                                </div> 
+                              </div> 
+                              <div class="card">
+                                <div class="card-header" id="heading11">
+                                  <h5 class="mb-0">
+                                    <a href="/assets/img/general-meeting/CIPL/XBRL Report_CGFL_10112025.html" target="_blank">
+                                      <img src="assets/img/icons/pdf.png"> 
+                                      XBRL Reports 10-11-2025
+                                    </a>
+                                  </h5>
+                                </div> 
+                              </div> 
+                              <div class="card">
+                                <div class="card-header" id="heading11">
+                                  <h5 class="mb-0">
+                                    <a href="/assets/img/general-meeting/CIPL/XBRL Report_CGFL_26095.html" target="_blank">
+                                      <img src="assets/img/icons/pdf.png"> 
+                                      XBRL Reports 26-09-2025
+                                    </a>
+                                  </h5>
+                                </div> 
+                              </div>   
+                             <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/general-meeting/CIPL/XBRL Report_CGFL_26095.html" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    XBRL Reports 26-09-2025
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+              </div>
+            </div>
+
+            
+         
+
+            <div class="col-lg-12 col-mb-12 col-12 mt--30 wow move-up">
+              <h3>Outcomes</h3>
+              <div id="faqsThree" class="faqsOne pdf-files mt--20"> 
+                 <div class="card" *ngFor="let doc4 of docs4">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs4 + doc4.page+'/' + doc4.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc4.doc)}}" alt="{{docs4.title}}" width="30"> {{doc4.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+                <div class="card"  *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/Board Meetings/Outcome of Board Meeting/Outcome of BM dated 10.10.2025.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Outcome of BM dated 10.10.2025
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/Board Meetings/Outcome of Board Meeting/Outcome of BM dated 14.10.2025.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Outcome of BM dated 14.10.2025
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+              </div>
+            </div>
+
+          
+        </div>
+      </div>
+    </div>
+
+
+  </main>

@@ -1,0 +1,279 @@
+<main class="page-content">
+  <div
+    class="dn-breadcaump-area breadcrumb-default bg_image bg_image--3 pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb-content text-center">
+            <h1 class="breadcrumb-content__title text-white fontWeight400">Contact Us</h1>
+            <ul class="breadcrumb-content__nav text-white">
+              <li><a routerLink="/home">Home</a></li>
+              <li class="separator">/</li>
+              <li class="active">Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Start Contact Form -->
+  <div class="draven-contact-form ptb--100 ptb_md--80 ptb_sm--80 bg-color" data-bg-color="#ffffff">
+    <div class="container">
+
+      <div class="row" id="contactFormSection">
+
+        <div class="col-lg-6 col-xl-6 map-bg">
+          <div class="section-title mb--30">
+            <h2 class="font--36"><b>Let's get in touch</b></h2>
+            <p class="font--18">Comments, questions? Drop us a note, and we’ll get back with you
+              shortly!</p>
+          </div>
+          <div class="contact-container adress__style--1 pt-0 pl-0 pr-0 pb-0">
+            <ul class="contact-address">
+              <li>
+                <span class="address-icon mr-2"><i class="dlicon ui-3_phone-call"></i></span>
+                <span>
+                  <h5>Phone</h5>
+                  <span class="address-text">+91 99200 56391</span>
+                </span>
+              </li>
+
+              <li>
+                <span class="address-icon mr-2"><i class=""><img src="assets/img/icons/landline1.png"></i></span>
+                <span>
+                  <h5>Landline Number</h5>
+                  <span class="address-text">022 68452001</span>
+                </span>
+              </li>
+              <li>
+                <span class="address-icon mr-2"><i class="dlicon ui-1_email-85"></i></span>
+                <span>
+                  <h5>Email</h5>
+                  <span class="address-text"> info@amplcapital.com</span>
+                </span>
+              </li>
+
+
+             
+
+
+
+              <li>
+                <span class="address-icon mr-2"><i class="dlicon location_pin"></i></span>
+                <span>
+                  <h5> Mumbai</h5>
+
+                  <span class="address-text">
+                    <p class="mb-2">One BKC, C Wing, 1216, BKC, Mumbai, Maharashtra  - 400051</p>
+                    <p class="mb-2">306, B2, Shubham Centre, Cardinal Gracious Road, Chakala Andheri East Mumbai - 400099</p>
+                  </span>
+                </span>
+              </li>
+
+
+
+              <!-- <li><span class="address-icon mr-2"><i class="dlicon location_pin"></i></span>
+                <span>
+                  <h5> New Delhi</h5>
+                  <span class="address-text">Oracle Credit Ltd Flat No. B-502, 5th Floor, B-wing,
+                    Statesman <br> House 148, Barakhamba Road,
+                    Connaught Place, New Delhi-110001</span>
+                </span>
+              </li> -->
+
+
+              <li><span class="address-icon mr-2"><i class="dlicon location_pin"></i></span>
+                <span>
+                  <h5> London</h5>
+                  <span class="address-text">
+                    <p class="mb-1"> The Mille, 3rd Floor River Suite,
+
+                      1000 Great West Road, Brentford, London, United Kingdom, TW8 9DW</p>
+                  </span>
+                </span>
+              </li>
+
+              <!-- <li><span class="address-icon mr-2"><i class="dlicon location_pin"></i></span>
+                <span>
+                  <h5> England & Wales</h5>
+                  <span class="address-text">Credent Management Ltd is registered in England & Wales, registration no.
+                    10970144</span>
+                </span>
+              </li>
+              <li><span class="address-icon mr-2"><i class="dlicon location_pin"></i></span>
+                <span>
+                  <h5> Maharashtra</h5>
+                  <span class="address-text"> One
+                    BKC, G-Block, B Wing, 12th Floor, Unit
+                    NO. 1220,<br> Bandra Kurla Complex, Bandra
+                    East, Mumbai, Maharashtra 400051</span>
+                </span>
+              </li> -->
+
+
+
+
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-xl-6">
+          <div class="contact-form-wrapper">
+            <h2>MAKE AN <span class="text-warning">APPOINTMENT</span> ON UR <br>TIME EASILY !</h2>
+
+
+
+
+              <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+                <div class="form-group">
+                  <label>Name</label>
+                  <input type="text" formControlName="name" class="form-control" />
+                  <small class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                    Name is required (Min: 3 characters)
+                  </small>
+                </div>
+
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" formControlName="email" class="form-control" />
+                  <small class="error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                    Enter a valid email address
+                  </small>
+                </div>
+
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <input type="text" formControlName="phone" class="form-control" />
+                  <small class="error" *ngIf="contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched">
+                    Enter a valid 10-digit phone number
+                  </small>
+                </div>
+
+                <div class="form-group">
+                  <label>Inquiry Type</label>
+                  <select formControlName="inquiry" class="form-control">
+                    <option value="" disabled selected>Select an inquiry</option>
+                    <option value="General">General Inquiry</option>
+                    <option value="Support">Support</option>
+                    <option value="Feedback">Feedback</option>
+                  </select>
+                  <small class="error"
+                    *ngIf="contactForm.get('inquiry')?.invalid && contactForm.get('inquiry')?.touched">
+                    Inquiry type is required
+                  </small>
+                </div>
+
+                <div class="form-group">
+                  <label>Message</label>
+                  <textarea formControlName="message" class="form-control"></textarea>
+                  <small class="error"
+                    *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                    Message must be at least 10 characters long
+                  </small>
+                </div>
+
+                <button type="submit" class="btn btn-primary" [disabled]="isSubmitting || contactForm.invalid">
+                  {{ isSubmitting ? 'Sending...' : 'Submit' }}
+                </button>
+              </form>
+
+              <div *ngIf="successMessage" class="success">{{ successMessage }}</div>
+              <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+            
+
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row mt--100" id="contactFormSection">
+
+        <h3>Escalation Matrix</h3>
+        <div class="col-lg-12 col-xl-12 map-bg">
+          <table  cellpadding="10" cellspacing="0" width="100%" style="border-collapse: collapse;">
+  <thead style="background-color:#d9e2f3;">
+    <tr>
+      <th >Details of</th>
+      <th >Contact Person</th>
+      <th >Address</th>
+      <th >Contact No.</th>
+      <th >Email Id</th>
+      <th >Working Hours</th>
+    </tr>
+  </thead>
+  <tbody>
+     <tr>
+      <td>PMS Direct Client On-boarding:</td>
+      <td>Mr. Manish Kajare</td>
+      <td>306, B2, Shubham Centre, Cardinal Gracious Road, Chakala Andheri East Mumbai - 400099</td>
+      <td>+91 8657863521</td>
+      <td>
+        <a href="mailto:amcsupport@amplcapital.com">amcsupport@amplcapital.com</a>
+      </td>
+      <td>9am to 6pm<br>Mon to Fri</td>
+    </tr>
+    <tr>
+      <td>Client Servicing Executive</td>
+      <td>Mr. Amogh Patil</td>
+      <td>306, B2, Shubham Centre, Cardinal Gracious Road, Chakala Andheri East Mumbai - 400099</td>
+      <td>+91 8657863520</td>
+      <td>
+        <a href="mailto:pms@amplcapital.com">pms@amplcapital.com</a>
+      </td>
+      <td>9am to 6pm<br>Mon to Fri</td>
+    </tr>
+
+    <tr>
+      <td>Compliance Officer</td>
+      <td>Mrs. Preeti Sethi</td>
+      <td>One BKC, C Wing, 1216, BKC, Mumbai, Maharashtra - 400051</td>
+      <td>+91 8657863523</td>
+      <td>
+        <a href="mailto:compliance@amplcapital.com">compliance@amplcapital.com</a>
+      </td>
+      <td>9am to 6pm<br>Mon to Fri</td>
+    </tr>
+
+    <tr>
+      <td>Designated Officer</td>
+      <td>Mr. Aditya Vikram Kanoria</td>
+      <td>One BKC, C Wing, 1216, BKC, Mumbai, Maharashtra - 400051</td>
+      <td>+91 93200 84168</td>
+      <td>
+        <a href="mailto:aditya@amplcapital.com">aditya@amplcapital.com</a>
+      </td>
+      <td>9am to 6pm<br>Mon to Fri</td>
+    </tr>
+  </tbody>
+</table>
+
+                <p>
+                  1.In case you are not satisfied with our response you can lodge your grievance with SEBI at <a href="https://scores.sebi.gov.in/ ">http://scores.gov.in</a> or you may also write to any of the offices of SEBI. SCORES may be accessed thorough SCORES mobile application as well, same can be downloaded from below link:
+                <a href="https://play.google.com/store/apps/details?id=com.sebi&hl=en_IN">https://play.google.com/store/apps/details?id=com.sebi&hl=en_IN</a><br> 
+                  2. ODR Portal could be accessed, if unsatisfied with the response. Your attention is drawn to the SEBI circular no. SEBI/HO/OIAE/OIAE_IAD-1/P/CIR/2023/131 dated July 31, 2023, on “Online Resolution of Disputes in the Indian Securities Market”. A common Online Dispute Resolution Portal (“ODR Portal”) which harnesses conciliation and online arbitration for resolution of disputes arising in the Indian Securities Market has been established. ODR Portal can be accessed via the following link - <a href="https://smartodr.in/">https://smartodr.in/</a>"
+                </p>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+  <!-- End Contact Form -->
+  <!-- <div class="google-map-area">
+       
+        <div class="google-map-area bg_color--1 section text-center">
+          <div class="ht-gmap3" id="htmap2" data-height="410" data-width="100%" data-zoom_enable="" data-zoom="10" data-map_type="roadmap" data-map_style="style11">
+          </div>
+        </div>
+      
+      </div> -->
+
+</main>

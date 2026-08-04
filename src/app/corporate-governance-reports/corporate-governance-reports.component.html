@@ -1,0 +1,260 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Corporate Governance Reports</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Corporate Governance Reports</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          
+          <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+              <div id="faqsThree" class="faqsOne pdf-files mt--50"> 
+                       <div class="card" *ngFor="let doc of docs">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+               
+                <div class="card"  *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                          
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/30.06.2012.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.06.2012
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/31.03.2012.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.03.2012
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/31.09.2012.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.09.2012
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/31.12.2012.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.12.2012
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/CGR_31.12.2011.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.12.2011
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 30.06.2013.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.06.2013
+                      </a>
+                    </h5>
+                  </div> 
+                </div>  
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 30.06.2014.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.06.2014
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 30.09.2013.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.09.2013
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 30.09.2014.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.09.2014
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 30.09.2015.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  30.09.2015
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 31.03.2014.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on 31.03.2014
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 31.03.2015.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.03.2015
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 31.12.2013.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on 31.12.2013
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report 31.12.2014.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on  31.12.2014
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/corporate-reports/Corporate Governance Report_June 2015.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Corporate Governance Reports on June 1015
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+                
+
+          
+               
+            
+               
+              </div>
+            </div>
+         
+
+        </div>
+      </div>
+    </div>
+
+<!-- 
+    <div class="about-area construction-about bg-20" data-bg-color="#ffffff">
+      <div class="container"> 
+        <nav class='animated fadeInLeft navbar-tab'>
+          <ul>
+            
+            <li class='sub-menu'><a href='#investors'>Investors zone<div class='fa fa-caret-down right'></div></a>
+              <ul>
+                <li><a href='#settings'>Financial Results</a></li>
+                <li><a href='#settings'>Shareholding Patterns</a></li>
+                <li><a href='#settings'>Investors & Contact</a></li>
+                <li><a href='#settings'>Listing Details</a></li>
+               
+              </ul>
+            </li>
+
+            <li class='sub-menu'><a href='#reports'>Reports & Disclosures <div class='fa fa-caret-down right'></div></a>
+              <ul>
+                <li><a href='#'>Annual Reports</a></li>
+                <li><a href='#'>Corporate Governance Reports</a></li>
+                <li><a href='#'>Code of Conduct</a></li>
+                <li><a href='#'>Code for Independent Directors</a></li>
+                <li><a href="">Fair Practices Code</a></li>
+                <li><a href="">Vigil/ Grievance mechanism</a></li>
+                <li><a href="">Policies</a></li>
+                <li><a href="">Material Events and Information</a></li>
+                <li><a href="">Newspaper Publication</a></li>
+                <li><a href="">Other Informations</a></li>
+                <li><a href="">Certificates</a></li>
+           
+
+               
+              </ul>
+            </li>
+            <li><a href='#message'>Notices</a></li> 
+            <li><a href='#message'>Careers</a></li>
+            <li><a href='#message'>Contact Us</a></li>
+          </ul>
+        </nav>
+         
+
+      </div>
+    </div> -->
+
+
+
+
+
+
+  </main>

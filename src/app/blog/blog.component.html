@@ -1,0 +1,55 @@
+
+<main class="page-content">
+<div class="dn-breadcaump-area breadcrumb-default bg_image about-us pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breadcrumb-content text-center">
+        <h1 class="breadcrumb-content__title text-white fontWeight400">Blog</h1>
+        <ul class="breadcrumb-content__nav text-white">
+          <li><a routerLink="/home">Home</a></li>
+          <li class="separator">/</li>
+          <li><a routerLink="/media">Media</a></li>
+          <li class="separator">/</li>
+          <li class="active">Blog</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div class="container-fluid pt--40">
+    <div class="row plr--80 plr_sm--15 plr_md--30 plr_lg--30 row-reverse">
+        <div class="col-xl-3 col-lg-3 col-md-4 mb-4" *ngFor="let items of blog"> 
+
+            <div class="blog blog_style--1 mt--80 mt_md--50 mt_sm--40">
+                <div  class="thumbnail">
+                    <a (click)="blogView(items.id)" target="_blank">
+
+                   <img class="w-100" src="{{(items.image=='' || items.image==null) ? 'assets/img/banner_dummy.jpg' :  mediaUrl+items.image}}" >
+
+                      </a>
+                    </div>
+                    <div  class="inner">
+                        <div  class="category">
+                             <small  class="bodyColor postedDate">Posted on {{items.pdate | date:'dd MMM yyyy'}} </small>
+                             <p><small><b> By {{items.author}}</b></small></p>
+                            </div>
+                             <h3  class="mb--10 mt--5 font--20"><a  (click)="blogView(items.id)" target="_blank"> {{items.title}} </a></h3>
+
+                            
+                             <div class="blog-content entry-excerpt"> 
+                              <div [innerHTML]="items.content">  </div> 
+                              </div>
+                              
+                             </div>
+                             <div class="lastudio-more-wrap pl-3 pb-3">
+                              <a (click)="blogView(items.id)" class="text-pri tect"><span>Read more...</span></a>
+                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+</main>

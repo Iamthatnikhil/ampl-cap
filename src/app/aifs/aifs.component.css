@@ -1,0 +1,31 @@
+.real-world__single{
+    border:1px solid #ddd !important;
+}
+
+.btn-circle{
+    background: #0a66c2 !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+    top: -4px;
+}
+
+
+@media screen and (max-width:991px){
+    .real-world__single{
+        height: 90%;
+        margin-bottom: 10px;
+    }
+    .real-world__icon-box{
+        padding-top: 10px;
+    }
+    .real-world__title{
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+    .real-world__title>a>br{
+        display: none;
+    }
+}

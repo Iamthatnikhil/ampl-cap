@@ -1,0 +1,76 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Open Offer</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">NBFC</li>
+                <li class="separator">/</li>
+                <li class="active">Investor Relations</li>
+                <li class="separator">/</li>
+                <li class="active">Open Offer</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          
+          <div class="col-lg-12 col-mb-12 col-12 wow move-up">
+              <div id="faqsThree" class="faqsOne pdf-files mt--50">  
+
+
+                <div class="card" *ngFor="let items of filterCategoty">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a [href]="imageUrls + items.pdf_file" target="_blank">
+                        <img src="assets/img/icons/pdf.png">  {{items.title}}
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+
+
+                <!-- <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/open-offer/Letter of Offer.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Letter of Offer
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+                
+                <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/open-offer/Post Offer Advertisement.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> Post Offer Advertisement
+                      </a>
+                    </h5>
+                  </div> 
+                </div> 
+  -->
+               
+               
+              </div>
+            </div>
+         
+
+        </div>
+      </div>
+    </div>
+
+
+  </main>

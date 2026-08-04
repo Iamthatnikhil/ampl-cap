@@ -1,0 +1,49 @@
+<main class="page-content">
+  <div
+    class="dn-breadcaump-area breadcrumb-default bg_image asset-management pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb-content text-center">
+            <h1 class="breadcrumb-content__title text-white fontWeight400">Brouchers</h1>
+            <ul class="breadcrumb-content__nav text-white">
+              <li><a routerLink="/home">Home</a></li>
+              <li class="separator">/</li>
+              <li class="active">Asset Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5">
+
+    <div class="column">
+      <div class="row broucherList">
+        <div class="col-lg-6 col-xl-4 col-md-6 col-sm-12 col-11 mt--30 wow move-up animate broucher-card"
+          *ngFor="let items of brouchers">
+          <div class="card text-center">
+            <div class="card-body p-2">
+              <a [href]="mediaUrlPdfs + items.pdf" target="_blank">
+
+
+                  <img  src="{{(items.image=='' || items.image==null) ? 'assets/img/banner_dummy.jpg' :  mediaUrlImgs+items.image}}" >
+
+
+                <h5 class="pt-4">{{items.title}}</h5>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</main>

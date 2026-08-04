@@ -1,0 +1,26 @@
+.jobApply .form-control{
+     font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+.jobApply input{
+    height:60px !important;
+}
+.jobApply .form-group{
+    margin-bottom: 20px;
+}
+.jobApply .modal-body{
+    padding: 45px;
+}
+
+.jobApply input[type="submit"]{
+    background-color: #28639d;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 18px;
+   
+    color: #fff;
+    height:60px !important;
+}

@@ -1,0 +1,89 @@
+<main class="page-content">
+
+    <div
+      class="dn-breadcaump-area breadcrumb-default bg_image nbfs pt--250  pb--130 pt_md--150  pb_md--100 pt_lg--150  pb_lg--100 pt_sm--150  pb_sm--100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb-content text-center text-white">
+              <h1 class="breadcrumb-content__title text-white fontWeight400">Proceedings</h1>
+              <ul class="breadcrumb-content__nav text-white">
+                <li><a routerLink="/home">Home</a></li>
+                <li class="separator">/</li>
+                <li class="active">Investor Relations</li>
+                <li class="separator">/</li>
+                <li class="active">Reports & Disclosures</li>
+                <li class="separator">/</li>
+                <li class="active">Postal Ballot</li>
+              </ul>  
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="about-area construction-about bg-20 pt-5" data-bg-color="#ffffff">
+      <div class="container"> 
+
+         
+        <div class="row align-items-center justify-content-center"> 
+ 
+           <div class="col-lg-12 col-mb-12 col-12 wow move-up mt--30">
+            <h3> Proceedings 
+            </h3>
+            <div id="faqsThree" class="faqsOne pdf-files mt--50"> 
+
+
+            <div class="card" *ngFor="let doc of docs">
+                <div class="card-header" id="heading1">
+                  <h5 class="mb-0">
+                      <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                      <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                    </a>
+                  </h5>
+                </div>
+              </div>
+
+
+              <div class="card"  *ngFor="let items of filterCategoty">
+                <div class="card-header" id="heading11">
+                  <h5 class="mb-0">
+                    <a [href]="imageUrls + items.pdf_file" target="_blank">
+                      <img src="assets/img/icons/pdf.png">  {{items.title}}
+                    </a>
+                  </h5>
+                </div> 
+              </div>  
+
+
+<!--               
+              <div class="card">
+                <div class="card-header" id="heading11">
+                  <h5 class="mb-0">
+                    <a href="assets/img/shareholding-meetings/proceedings_of_postal_ballot/Proceedings of Postal Ballot_5.05.2022.pdf" target="_blank">
+                      <img src="assets/img/icons/pdf.png"> 
+                      Proceedings of Postal Ballot 5.05.2022
+                    </a>
+                  </h5>
+                </div> 
+              </div> 
+              
+              <div class="card">
+                  <div class="card-header" id="heading11">
+                    <h5 class="mb-0">
+                      <a href="assets/img/shareholding-meetings/proceedings_of_postal_ballot/Proceedings of Postal Ballot_13.03.2022.pdf" target="_blank">
+                        <img src="assets/img/icons/pdf.png"> 
+                        Proceedings of Postal Ballot 13.03.2022
+                      </a>
+                    </h5>
+                  </div> 
+                </div> -->
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
