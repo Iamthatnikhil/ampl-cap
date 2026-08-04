@@ -1,0 +1,34 @@
+name: Deploy Angular to MilesWeb
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Get the code
+        uses: actions/checkout@v4
+
+      - name: 🟢 Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 Install packages
+        run: npm install
+
+      - name: 🏗️ Build Angular app
+        run: npm run build
+
+      - name: 🚀 Upload to MilesWeb
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/myapp/
+          server-dir: ./
