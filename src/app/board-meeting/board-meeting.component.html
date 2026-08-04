@@ -29,15 +29,49 @@
 
             
               <div id="faqsThree" class="faqsOne pdf-files mt--20"> 
-                     <div class="card" *ngFor="let doc of docs">
-                <div class="card-header" id="heading1">
-                  <h5 class="mb-0">
-                      <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
-                      <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
-                    </a>
-                  </h5>
-                </div>
-              </div>
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/Board Meetings/Outcome of Board Meeting/2026-2027/Outcome of the Board Meeting held on 07th May, 2026.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Outcome of the Board Meeting held on 07th May, 2026
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/Board Meetings/Outcome of Board Meeting/2026-2027/Outcome of Board Meeting_June 11, 2026.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Outcome of Board Meeting June 11, 2026
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div>  
+
+                            <div class="card">
+                              <div class="card-header" id="heading11">
+                                <h5 class="mb-0">
+                                  <a href="/assets/img/Board Meetings/Outcome of Board Meeting/2026-2027/Outcome of Board Meeting_Approval of Financial Statement_May 29, 2026.pdf" target="_blank">
+                                    <img src="assets/img/icons/pdf.png"> 
+                                    Outcome of Board Meeting_Approval of Financial Statement May 29, 2026
+                                  </a>
+                                </h5>
+                              </div> 
+                            </div> 
+                            <div class="card" *ngFor="let doc of docs">
+                              <div class="card-header" id="heading1">
+                                <h5 class="mb-0">
+                                    <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                                    <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                                    </a>
+                                </h5>
+                              </div>
+                            </div>        
+                             
+                            
                             <div class="card">
                               <div class="card-header" id="heading11">
                                 <h5 class="mb-0">
