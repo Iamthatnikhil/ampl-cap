@@ -35,3 +35,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/myapp/
           server-dir: ./
+          exclude: |
+            assets/**

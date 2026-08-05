@@ -28,288 +28,300 @@
 
           <div class="col-lg-12 col-mb-12 col-12 wow move-up">
             <div id="faqsThree" class="faqsOne pdf-files mt--50">
+              
+                        <div class="card" *ngFor="let doc of docs">
+                          <div class="card-header" id="heading1">
+                            <h5 class="mb-0">
+                                <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                                <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                              </a>
+                            </h5>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated consolidated financial results for the quarter and nine months ended 31.12.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated consolidated financial results for the quarter and nine months ended 31.12.2025
+                          </a></h5></div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter and nine months ended 31.12.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter and nine months ended 31.12.2025
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 30.09.2025 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated Consolidated financial results for the quarter and half year ended 30.09.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter and half year ended 30.09.2025
+                          </a></h5></div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter and half year ended 30.09.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter and half year ended 30.09.2025
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 30.06.2025 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated Consolidated financial results for the quarter ended 30.06.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter ended 30.06.2025
+                          </a></h5></div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter ended 30.06.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter ended 30.06.2025
+                          </a></h5></div>
+                        </div>
 
 
-              <!-- ========================================== -->
-<!-- FY 25-26                                   -->
-<!-- ========================================== -->
+                        <!-- ========================================== -->
+                        <!-- FY 24-25                                   -->
+                        <!-- ========================================== -->
 
-<!-- 31.12.2025 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated consolidated financial results for the quarter and nine months ended 31.12.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated consolidated financial results for the quarter and nine months ended 31.12.2025
-  </a></h5></div>
-</div>
+                        <!-- 31.03.2025 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Integrated Consolidated financial results for the quarter and year ended 31.03.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter and year ended 31.03.2025
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter and nine months ended 31.12.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter and nine months ended 31.12.2025
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Integrated standalone financial results for the quarter and year ended 31.03.2025.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Integrated standalone financial results for the quarter and year ended 31.03.2025
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.09.2025 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated Consolidated financial results for the quarter and half year ended 30.09.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter and half year ended 30.09.2025
-  </a></h5></div>
-</div>
+                        <!-- 31.12.2024 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter and nine months ended 31.12.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2024
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter and half year ended 30.09.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter and half year ended 30.09.2025
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Standalone financial results for the quarter and nine months ended 31.12.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2024
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.06.2025 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated Consolidated financial results for the quarter ended 30.06.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter ended 30.06.2025
-  </a></h5></div>
-</div>
+                        <!-- 30.09.2024 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter and half year ended 30.09.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and half year ended 30.09.2024
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 25-26/Integrated Standalone financial results for the quarter ended 30.06.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Standalone financial results for the quarter ended 30.06.2025
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Standalone financial results for the quarter and half year ended 30.09.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and half year ended 30.09.2024
+                          </a></h5></div>
+                        </div>
 
+                        <!-- 30.06.2024 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter ended 30.06.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2024
+                          </a></h5></div>
+                        </div>
 
-<!-- ========================================== -->
-<!-- FY 24-25                                   -->
-<!-- ========================================== -->
-
-<!-- 31.03.2025 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Integrated Consolidated financial results for the quarter and year ended 31.03.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated Consolidated financial results for the quarter and year ended 31.03.2025
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Integrated standalone financial results for the quarter and year ended 31.03.2025.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Integrated standalone financial results for the quarter and year ended 31.03.2025
-  </a></h5></div>
-</div>
-
-<!-- 31.12.2024 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter and nine months ended 31.12.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2024
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Standalone financial results for the quarter and nine months ended 31.12.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2024
-  </a></h5></div>
-</div>
-
-<!-- 30.09.2024 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter and half year ended 30.09.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and half year ended 30.09.2024
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Standalone financial results for the quarter and half year ended 30.09.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and half year ended 30.09.2024
-  </a></h5></div>
-</div>
-
-<!-- 30.06.2024 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Consolidated financial results for the quarter ended 30.06.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2024
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 24-25/Standalone Financial Results for the quarter ended 30.06.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone Financial Results for the quarter ended 30.06.2024
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 24-25/Standalone Financial Results for the quarter ended 30.06.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone Financial Results for the quarter ended 30.06.2024
+                          </a></h5></div>
+                        </div>
 
 
-<!-- ========================================== -->
-<!-- FY 23-24                                   -->
-<!-- ========================================== -->
+                        <!-- ========================================== -->
+                        <!-- FY 23-24                                   -->
+                        <!-- ========================================== -->
 
-<!-- 31.03.2024 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and year ended 31.03.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and year ended 31.03.2024
-  </a></h5></div>
-</div>
+                        <!-- 31.03.2024 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and year ended 31.03.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and year ended 31.03.2024
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and year ended 31.03.2024.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and year ended 31.03.2024
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and year ended 31.03.2024.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and year ended 31.03.2024
+                          </a></h5></div>
+                        </div>
 
-<!-- 31.12.2023 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and nine months ended 31.12.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2023
-  </a></h5></div>
-</div>
+                        <!-- 31.12.2023 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and nine months ended 31.12.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2023
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and nine months ended 31.12.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2023
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and nine months ended 31.12.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2023
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.09.2023 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and half year ended 30.09.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and half year ended 30.09.2023
-  </a></h5></div>
-</div>
+                        <!-- 30.09.2023 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter and half year ended 30.09.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and half year ended 30.09.2023
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and half year ended 30.09.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and half year ended 30.09.2023
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter and half year ended 30.09.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and half year ended 30.09.2023
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.06.2023 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter ended 30.06.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2023
-  </a></h5></div>
-</div>
+                        <!-- 30.06.2023 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Consolidated financial results for the quarter ended 30.06.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2023
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter ended 30.06.2023.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter ended 30.06.2023
-  </a></h5></div>
-</div>
-
-
-<!-- ========================================== -->
-<!-- FY 22-23                                   -->
-<!-- ========================================== -->
-
-<!-- 31.03.2023 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Final standalone and consolidated results with auditor report for the quarterended310323.pdf" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Final standalone and consolidated results with auditor report for the quarter ended 31.03.2023
-  </a></h5></div>
-</div>
-
-<!-- 31.12.2022 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Consolidated financial results for the quarter and nine months ended 31.12.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2022
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Standalone financial results for the quarter and nine months ended 31.12.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2022
-  </a></h5></div>
-</div>
-
-<!-- 30.09.2022 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Consolidated Financial Results for the quarter and half year ended 30.09.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated Financial Results for the quarter and half year ended 30.09.2022
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Standalone Financial Results for the quarter and half year ended 30.09.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone Financial Results for the quarter and half year ended 30.09.2022
-  </a></h5></div>
-</div>
-
-<!-- 30.06.2022 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Consolidated financial results for the quarter ended 30.06.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2022
-  </a></h5></div>
-</div>
-
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 22-23/Standalone financial results for the quarter ended 30.06.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter ended 30.06.2022
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 23-24/Standalone financial results for the quarter ended 30.06.2023.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter ended 30.06.2023
+                          </a></h5></div>
+                        </div>
 
 
-<!-- ========================================== -->
-<!-- FY 21-22                                   -->
-<!-- ========================================== -->
+                        <!-- ========================================== -->
+                        <!-- FY 22-23                                   -->
+                        <!-- ========================================== -->
 
-<!-- 31.03.2022 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 21-22/Consolidated financial results for the quarter and year ended 31.03.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and year ended 31.03.2022
-  </a></h5></div>
-</div>
+                        <!-- 31.03.2023 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Final standalone and consolidated results with auditor report for the quarterended310323.pdf" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Final standalone and consolidated results with auditor report for the quarter ended 31.03.2023
+                          </a></h5></div>
+                        </div>
 
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 21-22/Standalone financial results for the quarter and year ended 31.03.2022.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and year ended 31.03.2022
-  </a></h5></div>
-</div>
+                        <!-- 31.12.2022 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Consolidated financial results for the quarter and nine months ended 31.12.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and nine months ended 31.12.2022
+                          </a></h5></div>
+                        </div>
 
-<!-- 31.12.2021 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 21-22/Financial Results for the quarter and nine months ended 31.12.2021.html" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Financial Results for the quarter and nine months ended 31.12.2021
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Standalone financial results for the quarter and nine months ended 31.12.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and nine months ended 31.12.2022
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.09.2021 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 21-22/Financial results for the quarter and half year ended 30.09.2021.pdf" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Financial results for the quarter and half year ended 30.09.2021
-  </a></h5></div>
-</div>
+                        <!-- 30.09.2022 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Consolidated Financial Results for the quarter and half year ended 30.09.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated Financial Results for the quarter and half year ended 30.09.2022
+                          </a></h5></div>
+                        </div>
 
-<!-- 30.06.2021 -->
-<div class="card">
-  <div class="card-header"><h5 class="mb-0">
-  <a href="/assets/img/Financial Results/FY 21-22/Financial Results for the quarter ended 30.06.2021.pdf" target="_blank">
-  <img src="assets/img/icons/pdf.png"> Financial Results for the quarter ended 30.06.2021
-  </a></h5></div>
-</div>
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Standalone Financial Results for the quarter and half year ended 30.09.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone Financial Results for the quarter and half year ended 30.09.2022
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 30.06.2022 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Consolidated financial results for the quarter ended 30.06.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter ended 30.06.2022
+                          </a></h5></div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 22-23/Standalone financial results for the quarter ended 30.06.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter ended 30.06.2022
+                          </a></h5></div>
+                        </div>
+
+
+                        <!-- ========================================== -->
+                        <!-- FY 21-22                                   -->
+                        <!-- ========================================== -->
+
+                        <!-- 31.03.2022 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 21-22/Consolidated financial results for the quarter and year ended 31.03.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Consolidated financial results for the quarter and year ended 31.03.2022
+                          </a></h5></div>
+                        </div>
+
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 21-22/Standalone financial results for the quarter and year ended 31.03.2022.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Standalone financial results for the quarter and year ended 31.03.2022
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 31.12.2021 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 21-22/Financial Results for the quarter and nine months ended 31.12.2021.html" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Financial Results for the quarter and nine months ended 31.12.2021
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 30.09.2021 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 21-22/Financial results for the quarter and half year ended 30.09.2021.pdf" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Financial results for the quarter and half year ended 30.09.2021
+                          </a></h5></div>
+                        </div>
+
+                        <!-- 30.06.2021 -->
+                        <div class="card">
+                          <div class="card-header"><h5 class="mb-0">
+                          <a href="/assets/img/Financial Results/FY 21-22/Financial Results for the quarter ended 30.06.2021.pdf" target="_blank">
+                          <img src="assets/img/icons/pdf.png"> Financial Results for the quarter ended 30.06.2021
+                          </a></h5></div>
+                        </div>
+                      <div class="card" *ngFor="let doc of docs">
+                        <div class="card-header" id="heading1">
+                          <h5 class="mb-0">
+                              <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
+                              <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
+                            </a>
+                          </h5>
+                        </div>
+                      </div>
 
 
 
@@ -345,15 +357,7 @@
 
                     <div class="accordion-body">
 
-                      <div class="card" *ngFor="let doc of docs">
-                        <div class="card-header" id="heading1">
-                          <h5 class="mb-0">
-                              <a [href]="mediaUrlDocs + doc.page+'/' + doc.doc" target="_blank">                                    
-                              <img src="{{getFileIconFromName(doc.doc)}}" alt="{{doc.title}}" width="30"> {{doc.title}}
-                            </a>
-                          </h5>
-                        </div>
-                      </div>
+                      
                       
                       <div class="card" *ngFor="let items of filterCategoty">
                         <div class="card-header" id="heading11">
