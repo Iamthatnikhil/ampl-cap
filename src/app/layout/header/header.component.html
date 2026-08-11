@@ -246,73 +246,25 @@
             </li>
 
             <li class="label-1" routerLinkActive="active">
-              <a routerLink="/asset-management"
-                >Asset Management
+              <a href="javascript:void(0)"
+                >Other Businesses
                 <img src="assets/img/icons/down-arrow.png" />
               </a>
               <ul class="dropdown drop-item">
-                <li class="label-2">
-                  <a>PMS</a>
-                  <ul class="dropright sub-dropright drop-item">
-                    <li>
-                      <a routerLink="/credent-aim-multicap-strategy"
-                        ><span> Credent AIM Multicap Strategy</span></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="https://eclientreporting.nuvamaassetservices.com/wealthspectrum/app/loginWith"
-                        target="_blank"
-                        ><span> Client Login </span></a
-                      >
-                    </li>
-                    <li class="label-2">
-                      <a> Disclosure and Reports</a>
-                      <ul class="dropright sub-dropright drop-item">
-                        
-                        <li>
-                          <a href="/assets/documents/Performance June 2026.xls" download
-                            ><span> Performance June 2026</span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="/assets/documents/Signed%20Credent_Disclosure%20Document%20September%202024.pdf" download
-                            ><span> Disclosure Document </span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="/assets/documents/PMS SEBI Certificate, 18th Dec 2023.pdf" download
-                            ><span> SEBI Certificate </span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="/assets/documents/Investor Charter.pdf" download
-                            ><span> Investor Charter </span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="/assets/documents/Investor Complaints PMS (June 2026).docx" download
-                            ><span> Investor Complaints PMS (June 2026) </span></a
-                          >
-                        </li>
-                        <li>
-                          <a href="/assets/documents/Fee Calculation Tool.xlsx" download
-                            ><span> Fee Calculation Tool </span></a
-                          >
-                        </li>
-                       
-                        
-                      </ul>
-                    </li>
-                  </ul>
+                <li>
+                  <a href="https://amplamc.com" target="_blank" rel="noopener noreferrer">
+                    <span>Ampl Asset Management</span>
+                  </a>
                 </li>
-
-                <!-- <li><a routerLink="/aifs">AIFS</a></li> -->
+                <li>
+                  <a href="https://amplwealth.com" target="_blank" rel="noopener noreferrer">
+                    <span>Ampl Wealth</span>
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="/investmentbanking"><span>Investment Banking</span></a>
+                </li>
               </ul>
-            </li>
-
-            <li routerLinkActive="active">
-              <a routerLink="/investmentbanking">Investment Banking </a>
             </li>
             <!-- <li routerLinkActive="active">
               <a routerLink="/realestate">Real Estate </a>
@@ -358,11 +310,6 @@
                 </li>
               </ul>
             </li>
-            <li class="label-1" routerLinkActive="active">
-              <a routerLink="/wealth-management"
-                >Wealth Management
-              </a>
-              </li>
           </ul>
         </nav>
       </div>
@@ -662,87 +609,22 @@
       </li>
 
       <li class="has-dropdown">
-        <a data-toggle="collapse" data-target="#assetManagement"
-          >Asset Management</a
-        >
-        <ul class="submenu collapse" id="assetManagement">
+        <a data-toggle="collapse" data-target="#otherBusinesses">Other Businesses</a>
+        <ul class="submenu collapse" id="otherBusinesses">
           <li>
-            <a routerLink="/asset-management" (click)="closeSideBar()"
-              >Asset Management</a
-            >
+            <a href="https://amplamc.com" target="_blank" rel="noopener noreferrer" (click)="closeSideBar()">
+              Ampl Asset Management
+            </a>
           </li>
-
-          <li class="has-label--3 has-dropdown">
-            <a data-toggle="collapse" data-target="#pms">PMS</a>
-
-            <ul class="submenu collapse" id="pms">
-              <li>
-                <a
-                  routerLink="/credent-aim-multicap-strategy"
-                  (click)="closeSideBar()"
-                  >Credent AIM Multicap Strategy</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://eclientreporting.nuvamaassetservices.com/wealthspectrum/app/loginWith"
-                  (click)="closeSideBar()"
-                >
-                  Client Login
-                </a>
-              </li>
-
-              <li class="has-label--3 has-dropdown">
-                <a data-toggle="collapse" data-target="#disclouser"
-                  >Disclosure and reports <br />
-                  under PMS</a
-                >
-
-                <ul class="submenu collapse" id="disclouser">
-                  <li>
-                    <a href="/assets/documents/Performance June 2026.xls" download (click)="closeSideBar()"
-                      ><span> Performance June 2026</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/assets/documents/Signed%20Credent_Disclosure%20Document%20September%202024.pdf" download (click)="closeSideBar()"
-                      ><span> Disclosure Document </span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/assets/documents/PMS SEBI Certificate, 18th Dec 2023.pdf" download (click)="closeSideBar()"
-                      ><span> SEBI Certificate </span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/assets/documents/Investor Charter.pdf" download (click)="closeSideBar()"
-                      ><span> Investor Charter </span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/assets/documents/Investor Complaints PMS (June 2026).docx" download (click)="closeSideBar()"
-                      ><span> Investor Complaints PMS (June 2026) </span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="/assets/documents/Fee Calculation Tool.xlsx" download (click)="closeSideBar()"
-                      ><span> Fee Calculation Tool </span></a
-                    >
-                  </li>
-                  
-                </ul>
-              </li>
-            </ul>
+          <li>
+            <a href="https://amplwealth.com" target="_blank" rel="noopener noreferrer" (click)="closeSideBar()">
+              Ampl Wealth
+            </a>
           </li>
-
-          <!-- <li><a routerLink="/aifs">AIFS</a></li> -->
+          <li>
+            <a routerLink="/investmentbanking" (click)="closeSideBar()">Investment Banking</a>
+          </li>
         </ul>
-      </li>
-
-      <li>
-        <a routerLink="/investmentbanking" (click)="closeSideBar()"
-          >Investment Banking</a
-        >
       </li>
 
       <!-- <li>
