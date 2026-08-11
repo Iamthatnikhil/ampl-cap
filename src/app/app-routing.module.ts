@@ -59,6 +59,7 @@ import { SecretarialComplianceReportComponent } from './secretarial-compliance-r
 import { RegulationsComponent } from './regulations/regulations.component';
 import { QualifiedInstitutionalPlacementComponent } from './qualified-institutional-placement/qualified-institutional-placement.component';
 import { WealthManagementComponent } from './wealth-management/wealth-management.component';
+import { OtherBusinessesComponent } from './other-businesses/other-businesses.component';
 
 
 const routes: Routes = [
@@ -158,14 +159,20 @@ const routes: Routes = [
   },
   {
       path: 'wealth-management',
-  component: WealthManagementComponent
+      component: WealthManagementComponent
+  },
+  {
+      path: 'other-businesses',
+      component: OtherBusinessesComponent
   }
 ];
 
 @NgModule({
   imports: [
     // RouterModule.forRoot(routes)
-    RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })
+    RouterModule.forRoot(routes, {
+        scrollPositionRestoration: 'top'
+      })
   ],
   exports: [RouterModule]
 })

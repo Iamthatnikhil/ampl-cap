@@ -15,12 +15,12 @@
         <a routerLink="/home">
           <img
             src="/assets/img/logo/ampl-white-logo.webp"
-            alt="Ampl Capital White Logo"
+            alt="AMPL Capital White Logo"
             class="logo-1"
           />
           <img
             src="assets/img/logo/ampl-gold-logo.webp"
-            alt="Ampl Capital Gold Logo"
+            alt="AMPL Capital Gold Logo"
             class="logo-2"
           />
         </a>
@@ -245,26 +245,8 @@
               </ul>
             </li>
 
-            <li class="label-1" routerLinkActive="active">
-              <a href="javascript:void(0)"
-                >Other Businesses
-                <img src="assets/img/icons/down-arrow.png" />
-              </a>
-              <ul class="dropdown drop-item">
-                <li>
-                  <a href="https://amplamc.com" target="_blank" rel="noopener noreferrer">
-                    <span>Ampl Asset Management</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://amplwealth.com" target="_blank" rel="noopener noreferrer">
-                    <span>Ampl Wealth</span>
-                  </a>
-                </li>
-                <li>
-                  <a routerLink="/investmentbanking"><span>Investment Banking</span></a>
-                </li>
-              </ul>
+            <li routerLinkActive="active">
+              <a routerLink="/other-businesses">Other Businesses</a>
             </li>
             <!-- <li routerLinkActive="active">
               <a routerLink="/realestate">Real Estate </a>
@@ -608,23 +590,8 @@
         </ul>
       </li>
 
-      <li class="has-dropdown">
-        <a data-toggle="collapse" data-target="#otherBusinesses">Other Businesses</a>
-        <ul class="submenu collapse" id="otherBusinesses">
-          <li>
-            <a href="https://amplamc.com" target="_blank" rel="noopener noreferrer" (click)="closeSideBar()">
-              Ampl Asset Management
-            </a>
-          </li>
-          <li>
-            <a href="https://amplwealth.com" target="_blank" rel="noopener noreferrer" (click)="closeSideBar()">
-              Ampl Wealth
-            </a>
-          </li>
-          <li>
-            <a routerLink="/investmentbanking" (click)="closeSideBar()">Investment Banking</a>
-          </li>
-        </ul>
+      <li>
+        <a routerLink="/other-businesses" (click)="closeSideBar()">Other Businesses</a>
       </li>
 
       <!-- <li>

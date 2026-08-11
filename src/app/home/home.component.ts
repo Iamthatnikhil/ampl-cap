@@ -36,6 +36,14 @@ export class HomeComponent {
     },
     {
       image: 'assets/img/revolution-slider/investment-banking-1.jpg',
+      alt: 'Wealth Management',
+      title: 'Wealth <br /><span>Management</span>',
+      text: 'Build personalized financial plans, track portfolios, and grow long-term wealth with strategic guidance.',
+      link: '/wealth-management',
+      buttonText: 'Know More',
+    },
+    {
+      image: 'assets/img/revolution-slider/investment-banking-1.jpg',
       alt: 'Investment Banking',
       title: 'Investment <br /><span>Banking</span>',
       text: 'Our investment banking division is a holistic partner to businesses of all scales and sectors.',

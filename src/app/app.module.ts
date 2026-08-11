@@ -73,6 +73,7 @@ import { SecretarialComplianceReportComponent } from './secretarial-compliance-r
 import { RecaptchaModule } from 'ng-recaptcha';
 import { QualifiedInstitutionalPlacementComponent } from './qualified-institutional-placement/qualified-institutional-placement.component';
 import { WealthManagementComponent } from './wealth-management/wealth-management.component';
+import { OtherBusinessesComponent } from './other-businesses/other-businesses.component';
 
 
 @NgModule({
@@ -136,7 +137,8 @@ import { WealthManagementComponent } from './wealth-management/wealth-management
     DetailsOfKmpComponent,
     SecretarialComplianceReportComponent,
     QualifiedInstitutionalPlacementComponent,
-    WealthManagementComponent
+    WealthManagementComponent,
+    OtherBusinessesComponent
   ],
   imports: [
     BrowserModule,
