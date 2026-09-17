@@ -1,7 +1,6 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, NgForm, Validators } from '@angular/forms';
-import emailjs from 'emailjs-com';
-
+import { Component } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -16,54 +15,98 @@ export class ContactusComponent {
   recaptchaToken: string | null = null;
 
 
-  constructor(private fb: FormBuilder) {
-    this.contactForm = this.fb.group({
-      name: ['', [Validators.required, Validators.minLength(3)]],
-      email: ['', [Validators.required, Validators.email]],
-      phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
-      inquiry: ['', [Validators.required]],
-      message: ['', [Validators.required, Validators.minLength(10)]],
+    constructor(
+      private fb: FormBuilder,
+      private http: HttpClient
+    ) {
+        this.contactForm = this.fb.group({
+        name: ['', [Validators.required, Validators.minLength(3)]],
+        email: ['', [Validators.required, Validators.email]],
+        phone: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+        inquiry: ['', [Validators.required]],
+        message: ['', [Validators.required, Validators.minLength(10)]],
 
-    });
-  }
+      });
+    }
 
 
 
 
   sendEmail() {
 
-    if (this.contactForm.invalid) {
-      alert('Please complete the form and verify reCAPTCHA.');
-      return;
+  if (this.contactForm.invalid) {
+    this.contactForm.markAllAsTouched();
+    this.errorMessage = 'Please complete all required fields.';
+    return;
+  }
+
+  this.successMessage = '';
+  this.errorMessage = '';
+  this.isSubmitting = true;
+
+  const scriptUrl =
+    'https://script.google.com/macros/s/AKfycbx_KpfSrYujiGrty8OG-fiSj-h3zkrmFJUa-IYFb4UZ3Afu4vn7JsbdzHEPmFq6F4I/exec';
+
+  const formData = {
+    name: this.contactForm.value.name || '',
+    email: this.contactForm.value.email || '',
+    phone: this.contactForm.value.phone || '',
+    organisation: '',
+    query: this.contactForm.value.inquiry || '',
+    message: this.contactForm.value.message || '',
+    website: ''
+  };
+
+  const body = new URLSearchParams();
+
+  Object.entries(formData).forEach(([key, value]) => {
+    body.set(key, value as string);
+  });
+
+  fetch(scriptUrl, {
+    method: 'POST',
+    body: body.toString(),
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+    }
+  })
+  .then(async response => {
+
+    const text = await response.text();
+
+    console.log('Apps Script response:', text);
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${text}`);
     }
 
-    this.successMessage = '';
-    this.errorMessage = '';
-    this.isSubmitting = true;
-    const serviceID = 'service_5vcn2w7';
-    const templateID = 'template_ilw01vk';
-    const publicKey = 'SW72w8Ikpdyg3yZQM';
+    return JSON.parse(text);
+  })
+  .then(result => {
 
-    const formData = {
-      ...this.contactForm.value,
-      'g-recaptcha-response': this.recaptchaToken
-    };
+    if (result.success) {
 
-    emailjs.send(serviceID, templateID, formData, publicKey)
-      .then(() => {
-        this.successMessage = 'Message sent successfully!';
-        //alert('Message sent successfully!');
-        this.contactForm.reset();
-        this.isSubmitting = false;
+      this.successMessage = 'Message sent successfully!';
+      this.contactForm.reset();
 
-      })
-      .catch((error) => {
-        //console.error('EmailJS Error:', error);
-        this.errorMessage = 'Mail Error: ' + error;
-        //alert('Failed to send message.');
-        this.isSubmitting = false;
-      });
-  }
+    } else {
+
+      this.errorMessage =
+        result.error || 'Unable to send your message.';
+    }
+
+    this.isSubmitting = false;
+  })
+  .catch(error => {
+
+    console.error('Contact form error:', error);
+
+    this.errorMessage =
+      error.message || 'Unable to submit the form.';
+
+    this.isSubmitting = false;
+  });
+}
 
 }
 
